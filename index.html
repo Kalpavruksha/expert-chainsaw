@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalpavruksha G | Software Developer</title>
+    <meta name="description" content="Kalpavruksha G - Full-stack developer with experience building web applications in React, Node.js, and MongoDB.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="film-overlay" style="position:fixed;inset:0;background:#0a0703;z-index:99999;pointer-events:none;"></div>
+    <div class="cursor">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2V22M2 12H22" stroke="#c9a84c" stroke-width="2"/>
+        </svg>
+    </div>
+    <div class="cursor-follower"></div>
+    <div class="progress-bar"></div>
+
+    <nav>
+        <div class="nav-logo">KALPAVRUKSHA</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+    </nav>
+
+    <section id="hero">
+        <canvas id="hero-canvas" class="hero-bg-grid"></canvas>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <div class="hero-badge-dot"></div>
+                    Available for Work
+                </div>
+                <h1 class="hero-title">
+                    <span class="line1">SOFTWARE</span>
+                    <span class="line2">DEVELOPER</span>
+                </h1>
+                <div class="hero-role">Turning ideas into <span class="highlight-text">cinematic digital experiences</span>.</div>
+                <p class="hero-bio">
+                    Computer Science student and full-stack developer with experience building web applications in React, Node.js, and MongoDB. Proficient in REST APIs, JWT authentication, and secure data handling.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="https://github.com/Kalpavruksha" target="_blank" class="btn-secondary">GitHub Profile</a>
+                </div>
+            </div>
+            <div class="hero-image-wrap">
+                <div class="hero-image-frame">
+                    <img src="profile%20pic.png" alt="Kalpavruksha G" class="hero-photo">
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            Scroll
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-item">REACT.JS <span>•</span> NODE.JS <span>•</span> MONGODB <span>•</span> NEXT.JS <span>•</span> TAILWIND CSS <span>•</span> PYTHON <span>•</span> GO <span>•</span> GOOGLE CLOUD <span>•</span> DOCKER <span>•</span> KUBERNETES</div>
+            <div class="marquee-item">REACT.JS <span>•</span> NODE.JS <span>•</span> MONGODB <span>•</span> NEXT.JS <span>•</span> TAILWIND CSS <span>•</span> PYTHON <span>•</span> GO <span>•</span> GOOGLE CLOUD <span>•</span> DOCKER <span>•</span> KUBERNETES</div>
+            <div class="marquee-item">REACT.JS <span>•</span> NODE.JS <span>•</span> MONGODB <span>•</span> NEXT.JS <span>•</span> TAILWIND CSS <span>•</span> PYTHON <span>•</span> GO <span>•</span> GOOGLE CLOUD <span>•</span> DOCKER <span>•</span> KUBERNETES</div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <div class="section-label">01 // About Me</div>
+                <h2 class="section-title">ENGINEERING <br>DIGITAL <br>SOLUTIONS.</h2>
+                <p>I am a <strong>Computer Science student</strong> at KLE Institute of Technology Hubli (CGPA: 8.05/10), actively engaged in full-stack development. I thrive on creating robust web applications using <strong>React, Node.js, and MongoDB</strong>.</p>
+                <p>My passion lies in crafting clean, maintainable code and solving complex problems. Recently, I secured <strong>first place at the InnovateX hackathon</strong>, demonstrating my ability to build effective solutions under pressure.</p>
+                <p>I am constantly expanding my skill set, currently focusing on <strong>Docker, Kubernetes, and Google Cloud</strong> for deployment and scaling, to deliver production-ready applications.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <div class="stat-num" data-count="3">0</div>
+                    <div class="stat-label">Years Learning CS</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" data-count="10" data-suffix="+">0</div>
+                    <div class="stat-label">Repositories</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" data-count="6" data-suffix="+">0</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" data-count="1" data-suffix="st">0</div>
+                    <div class="stat-label">Hackathon Win</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills-inner">
+            <div class="section-label">02 // Expertise</div>
+            <h2 class="section-title">TECHNICAL ARSENAL.</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-pill">
+                    <div class="skill-cat">Frontend</div>
+                    <div class="skill-name">React.js</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Frontend</div>
+                    <div class="skill-name">Next.js</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Frontend</div>
+                    <div class="skill-name">Tailwind CSS</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Frontend</div>
+                    <div class="skill-name">HTML5 / CSS3</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Backend</div>
+                    <div class="skill-name">Node.js</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Backend</div>
+                    <div class="skill-name">Python</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Backend</div>
+                    <div class="skill-name">Go</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Backend</div>
+                    <div class="skill-name">C</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Database</div>
+                    <div class="skill-name">MongoDB</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Database</div>
+                    <div class="skill-name">SQL</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Auth & Security</div>
+                    <div class="skill-name">JWT</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Auth & Security</div>
+                    <div class="skill-name">Auth0</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Cloud & DevOps</div>
+                    <div class="skill-name">Google Cloud</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Cloud & DevOps</div>
+                    <div class="skill-name">Docker</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Cloud & DevOps</div>
+                    <div class="skill-name">Kubernetes</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Tools</div>
+                    <div class="skill-name">Kafka</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">Tools</div>
+                    <div class="skill-name">Git & GitHub</div>
+                </div>
+                <div class="skill-pill">
+                    <div class="skill-cat">APIs</div>
+                    <div class="skill-name">Twilio / SendGrid</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="exp-inner">
+            <div class="section-label">03 // Experience</div>
+            <h2 class="section-title">PROFESSIONAL JOURNEY.</h2>
+            
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">Software Developer Intern</div>
+                        <div class="exp-company">Vrishanksoft Pvt Ltd (OPC)</div>
+                    </div>
+                    <div class="exp-date">02/2026 - 05/2026</div>
+                </div>
+                <ul class="exp-list">
+                    <li>Delivered and improved 5+ web application features in collaboration with the team using Python, Django, and React.</li>
+                    <li>Conducted debugging, testing, and refactoring across 5+ modules to maintain a stable, readable codebase during the 3-month internship.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-inner">
+            <div class="projects-header">
+                <div class="section-label">04 // Featured Work</div>
+                <div style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:20px; margin-bottom:0;">
+                    <h2 class="section-title" style="margin-bottom:0;">LATEST PROJECTS.</h2>
+                    <div class="projects-nav">
+                        <button class="proj-arrow proj-arrow-prev" aria-label="Previous">
+                            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <button class="proj-arrow proj-arrow-next" aria-label="Next">
+                            <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"></polyline></svg>
+                        </button>
+                        <span class="proj-scroll-hint">Drag to explore</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Industrial Bearing Chain Centre -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag freelance">Freelance Client</div>
+                            <div class="project-links-top">
+                                <a href="https://www.industrialbearingchaincentre.in/" target="_blank" class="project-link-btn" title="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Industrial Bearing Chain Centre</h3>
+                        <p class="project-desc">Industrial supply portfolio site designed with high-impact SEO optimization, precise site metadata for rich thumbnails, and optimized rendering to achieve high-authority local search results.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">HTML5 / CSS</span>
+                        <span class="tech-tag">SEO</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Neokisan -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag freelance">Freelance Client</div>
+                            <div class="project-links-top">
+                                <a href="https://neo-kisan.vercel.app" target="_blank" class="project-link-btn" title="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Neokisan Innovations</h3>
+                        <p class="project-desc">Professional website for an agri-technology company focused on smart pruning solutions. Features modern agritech design, smooth video integration, and serverless form actions.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">Next.js 14</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">FormSubmit.co</span>
+                    </div>
+                </div>
+
+                <!-- Buildfolio -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag live">Internship Project</div>
+                            <div class="project-links-top">
+                                <a href="https://buildfolio-sandy.vercel.app/" target="_blank" class="project-link-btn" title="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <a href="https://github.com/Kalpavruksha/Buildfolio" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Buildfolio</h3>
+                        <p class="project-desc">AI-powered portfolio builder for developers. Create a stunning, personalized developer portfolio in minutes with Gemini AI assistance, responsive templates, and a drag-and-drop builder.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">Next.js 16</span>
+                        <span class="tech-tag">Django 5.2</span>
+                        <span class="tech-tag">Clerk Auth</span>
+                        <span class="tech-tag">Gemini AI</span>
+                    </div>
+                </div>
+
+                <!-- Par4Charity -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag live">Internship Assignment</div>
+                            <div class="project-links-top">
+                                <a href="https://par4charity.vercel.app" target="_blank" class="project-link-btn" title="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <a href="https://github.com/Kalpavruksha/par4charity" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Par4Charity</h3>
+                        <p class="project-desc">Golf Subscription & Charity Draw Platform. A production-ready SaaS platform that combines golf score tracking, algorithmic monthly prize draws, real-time analytics, and secure payment processing.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">Next.js 14</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Lume Skin -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag">E-Commerce</div>
+                            <div class="project-links-top">
+                                <a href="https://lume-skin-iota.vercel.app" target="_blank" class="project-link-btn" title="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <a href="https://github.com/Kalpavruksha/LUME-SKIN-" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">LUMÉ SKIN</h3>
+                        <p class="project-desc">Headless e-commerce storefront designed for premium skincare. It combines a sophisticated user interface with high-performance architecture, dynamic theme engine, and immersive Three.js WebGL backgrounds.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">Next.js 15</span>
+                        <span class="tech-tag">Three.js</span>
+                        <span class="tech-tag">Tailwind CSS v4</span>
+                    </div>
+                </div>
+
+                <!-- Smart Health Care -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag">Academic</div>
+                            <div class="project-links-top">
+                                <a href="https://health-care-tracker.vercel.app/" target="_blank" class="project-link-btn" title="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <a href="https://github.com/Kalpavruksha/health-vraft" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Smart Health Care</h3>
+                        <p class="project-desc">Digital healthcare portal enabling patients to book appointments and manage records. Integrated automated SMS reminders via Twilio API and an efficient symptom-checker feature to streamline triage.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Twilio API</span>
+                    </div>
+                </div>
+
+                <!-- Faculty Diary -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag">Academic</div>
+                            <div class="project-links-top">
+                                <a href="https://github.com/Kalpavruksha/faculty-diary" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Faculty Diary</h3>
+                        <p class="project-desc">A centralized digital diary designed for faculty to manage workflows, track schedules, organize assignments, and streamline internal communications efficiently. Integrated automated email and real-time SMS notifications.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Nodemailer</span>
+                        <span class="tech-tag">Twilio</span>
+                    </div>
+                </div>
+                
+                <!-- Go Music Player -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag">Audio App</div>
+                            <div class="project-links-top">
+                                <a href="https://go-music-player.vercel.app/" target="_blank" class="project-link-btn" title="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <a href="https://github.com/Kalpavruksha/go-music-player" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Go Music Player</h3>
+                        <p class="project-desc">Engineered a highly responsive web-based music player with Go and Tailwind CSS supporting seamless streaming of local audio files. Designed an intuitive UI with robust search and playback controls.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">HTML5 / JS</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Audio APIs</span>
+                    </div>
+                </div>
+
+                <!-- Interview Bot -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag">AI Application</div>
+                            <div class="project-links-top">
+                                <a href="https://interview-bot-nine-liart.vercel.app" target="_blank" class="project-link-btn" title="Live Demo">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <a href="https://github.com/Kalpavruksha/interview-bot" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">AI Interview Bot</h3>
+                        <p class="project-desc">Intelligent AI-powered interview assistant. Candidates upload their resume, the system extracts critical info, and Gemini AI dynamically generates personalized, timed interview questions to test skills.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">Go Backend</span>
+                        <span class="tech-tag">Gemini API</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- LivestockSafe -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag">PWA Platform</div>
+                            <div class="project-links-top">
+                                <a href="https://github.com/Kalpavruksha/LiveStockSafe" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">LivestockSafe</h3>
+                        <p class="project-desc">Digital Identity & Anti-Theft System for livestock. Provides real-time notifications, geolocation capture on report, offline-first PWA capabilities, and a searchable public stolen registry.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">React PWA</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+
+                <!-- URL Shortener -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag">Tooling</div>
+                            <div class="project-links-top">
+                                <a href="https://github.com/Kalpavruksha/super-octo-system-url-shortner-" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">URL Shortener Analytics</h3>
+                        <p class="project-desc">A feature-rich URL shortener offering advanced link analytics. Tracks click frequency, referrers, and user agents. Secured via JWT authentication and features automated link expiry management.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                </div>
+
+                <!-- Ease-Rent -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag">Management</div>
+                            <div class="project-links-top">
+                                <a href="https://github.com/Kalpavruksha/Ease-Rent" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Ease-Rent</h3>
+                        <p class="project-desc">Complete rent management application designed to handle tenants' data, streamline tracking of due payments, and dispatch Twilio-based automated SMS reminders to ensure punctual payments.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Twilio API</span>
+                    </div>
+                </div>
+
+                <!-- TabMind -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag">Extension</div>
+                        </div>
+                        <h3 class="project-name">TabMind Chrome Extension</h3>
+                        <p class="project-desc">An advanced Chrome extension going beyond typical tab managers. It incorporates psychological insights, mental state detection, context awareness, and tab relationship visualization to boost productivity.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Chrome Extension API</span>
+                        <span class="tech-tag">React</span>
+                    </div>
+                </div>
+
+                <!-- CivicAI -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <div class="project-card-header">
+                            <div class="project-tag">AI / NLP</div>
+                            <div class="project-links-top">
+                                <a href="https://github.com/Kalpavruksha/CivicAI-" target="_blank" class="project-link-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">CivicAI</h3>
+                        <p class="project-desc">AI-Powered Civic Issue Classifier. Features an end-to-end RAG model to classify, analyze, and intelligently assign public complaints related to infrastructure using FastAPI NLP pipelines.</p>
+                    </div>
+                    <div class="project-tech-wrap">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">RAG Model</span>
+                    </div>
+                </div>
+
+            </div><!-- /projects-grid -->
+        </div><!-- /projects-inner -->
+    </section>
+
+    <section id="achievements">
+        <div class="ach-inner">
+            <div class="section-label">05 // Milestones</div>
+            <h2 class="section-title">RECOGNITIONS.</h2>
+            
+            <div class="folder-gallery-container">
+                <!-- The folder back -->
+                <div class="folder-back"></div>
+                
+                <!-- The cards (Milestones) -->
+                <div class="folder-cards">
+                    <div class="ach-card">
+                        <div class="ach-icon gold">🏆</div>
+                        <div class="ach-title">1st Place Winner</div>
+                        <div class="ach-desc">Won 1st place at InnovateX Presidency Univ 24-hour hackathon.</div>
+                    </div>
+                    <div class="ach-card">
+                        <div class="ach-icon blue">🏅</div>
+                        <div class="ach-title">Hackathon Finalist</div>
+                        <div class="ach-desc">Shortlisted in Hack Fusion 12-hour hackathon for technical approach.</div>
+                    </div>
+                    <div class="ach-card">
+                        <div class="ach-icon purple">📜</div>
+                        <div class="ach-title">Cloud Certs</div>
+                        <div class="ach-desc">Google Cloud Gen AI, Workspace Tools, Image Generation.</div>
+                    </div>
+                    <div class="ach-card">
+                        <div class="ach-icon green">💻</div>
+                        <div class="ach-title">Tech Certs</div>
+                        <div class="ach-desc">Docker, Kubernetes, Transformers, HackerRank Python/Java.</div>
+                    </div>
+                </div>
+
+                <!-- The folder front -->
+                <div class="folder-front">
+                    <div class="folder-label">My Achievements</div>
+                </div>
+                
+                <div class="drag-hint">Scroll down or hover to open</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-inner">
+            <div class="section-label">06 // Connect</div>
+            <h2 class="section-title">LET'S BUILD <br>SOMETHING EXTRAORDINARY.</h2>
+            
+            <a href="mailto:kalpavruksha.g.dev@gmail.com" class="contact-email">kalpavruksha.g.dev@gmail.com</a>
+            
+            <div class="contact-links">
+                <a href="tel:8088252231" class="contact-link-card">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    8088252231
+                </a>
+                <a href="https://www.linkedin.com/in/kalpavruksha-g-4a3151267" target="_blank" class="contact-link-card">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn Profile
+                </a>
+                <a href="https://github.com/Kalpavruksha" target="_blank" class="contact-link-card">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">KALPAVRUKSHA</div>
+        <div class="copy">© 2026 Kalpavruksha G. All rights reserved.</div>
+    </footer>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r158/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
